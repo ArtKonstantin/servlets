@@ -17,4 +17,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: app # имя архива, который будет опубликован на GitHub'е
-          path: target/*.jar
+          path: target/*.war
