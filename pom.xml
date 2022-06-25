@@ -8,6 +8,7 @@
     <artifactId>servlets</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
+    <!-- Web Application Archive -->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -16,9 +17,15 @@
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
         <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
+        <logback-classic.version>1.2.11</logback-classic.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-classic.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -36,7 +43,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${maven-war-plugin.version}</version>
             </plugin>

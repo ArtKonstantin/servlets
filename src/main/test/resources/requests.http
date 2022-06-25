@@ -1,0 +1,9 @@
+### users.getAll
+GET http://localhost:8080/users.getAll
+X-Login: vasya
+X-Password: secret
+
+### users.getById
+GET http://localhost:8080/users.getById?id=1
+X-Login: vasya
+X-Password: secret
